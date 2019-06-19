@@ -15,7 +15,7 @@
         
         //score
         var score =0;
-        var ele=document.getElementById('score');
+        var ele=document.getElementById('score_card');
 
         
         //initial position of the snake
