@@ -27,7 +27,7 @@ canvas{
 
 .container_start{
     position: absolute;
-    top: 40%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%,-50%);
 }

@@ -7,7 +7,7 @@
     </div>
     <div id="score_card" style="
         position: fixed;
-        top:70%;
+        top:65%;
         color: aliceblue;
         left: 45%;
         font-size: 50px;
@@ -15,7 +15,14 @@
     ">
         Score
     </div>
-    <div class="controls">
+    <div class="controls" style="
+         position: fixed;
+        top:80%;
+        color: aliceblue;
+        left: 30%;
+        font-size: 2.5vw;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;     
+    ">
         USE ARROW KEYS FOR MOVEMENT
     </div>
     
