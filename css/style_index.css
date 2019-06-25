@@ -2,53 +2,77 @@
     margin: 0;
     padding: 0;
 }
-.bg{
-    position: fixed;
-    top: 70px;
-    width: 100%;
-    height: 100%;
+body{
     background-image: url('../images/arcade2.jpg');
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;  
 }
-
 .text{
     left: 50%;
-    top: 25%;
+    top: 20vh;
     transform: translate(-50%,-50%);
-
+    
     position: absolute;
     color: #f1f1f1;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
-    font-size: 80px;
+    font-size: 5vw;
 }
 .container{
+   
     display: flex;
     justify-content: space-around;
     z-index: 10;
     transform: translate(-50%,-50%);
-    left: 50%;
+    left: 55%;
     top: 55%;
-    width: 900px;
-    height: 350px;
+    width: 70vw;
+    height: 40vh;
     position: fixed;
     color: #f1f1f1;
+    flex: 0 1 auto;
 
 
 }
+
+@media only screen and (max-height: 720px) {
+    .container {
+        display: none;
+    }
+}
+
 
 .snake{
-    width: 360px;
+    width: 30vw;
+    height: 40vh;
     background-image: url('../images/snake.png');
     background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
 }
 
-.pong{
-    width: 360px;
-    background-image: url('../images/pong.png');
-    background-position: center;
-    background-size: cover;
+.snake:hover{
+    width: 35vw;
+    height: 45vh;
+}
 
+
+.pong{
+    width: 30vw;
+    height: 40vh;
+    background-image: url('../images/pong2_scaled.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+}
+.pong:hover{
+    width: 35vw;
+    height: 45vh;
+}
+
+@media only screen and (min-height: 720px) {
+    .btn button {
+        display: none;
+    }
 }
 
 .btn{
@@ -58,12 +82,10 @@
     transform: translate(-50%,-50%);
     left: 50%;
     top: 75%;
-    width: 900px;
+    width: 50vw;
     height: 50px;
     position: fixed;
-  transition: 0.5 ease;
-
-    /* color: #f1f1f1; */
+    transition: 0.5s ease;
 }
 
 .btn button{
@@ -73,8 +95,17 @@
     border: black solid 1px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 
+}
+
+.btn button:hover{
+  transition: 0.5 ease;
+  background: black;
+  color: white;
+  border: 1px solid white ;
+  width:250px;
+  height: 60px;
 }
 
 .btn button:hover{

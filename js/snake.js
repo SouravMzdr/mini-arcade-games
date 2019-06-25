@@ -25,32 +25,46 @@
         length=5;
 
         //movement of the snake
-        var Vx = 0;
-        var Vy = 0;
-
-        var upPressed=false;
-        var downPressed=false;
-        var righPressed=false;
-        var leftPressed=false;
+        
+        var mx = false;
+        var my = false;
 
         document.addEventListener('keydown', keyDownHandler,false);
             function keyDownHandler(event){
                 switch(event.keyCode){
                     case 37:
-                        Vx=-scale;Vy=0;
+                        if (!mx){
+                            mx = true;
+                            my =false;
+                            Vx=-scale;Vy=0;
+                        }
+                        
                     break;
                     case 38:
+                    if (!my){
+                        mx = false;
+                        my = true;
                         Vx=0;Vy=-scale;
+                    }
+                        
                     break;
                     case 39:
+                    if (!mx){
+                        mx = true;
+                        my =false;
                         Vx=scale;Vy=0;
+
+                    }
                     break;
                     case 40:
-                     Vx=0;Vy=scale;
+                    if (!my){
+                        mx = false;
+                        my = true;
+                        Vx=0;Vy=scale;
+                    }
                     break;
                 }
             }
-
            
 
         function drawFruit(){

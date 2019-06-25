@@ -27,33 +27,33 @@ var canvas = document.getElementById("myCanvas");
 
                 function keyDownHandler(event){
                     switch(event.keyCode){
-                        case 37:
+                        case 38:
                             leftPressed = true;
                             break;
-                        case 39:
+                        case 40:
                             rightPressed = true;
                             break;
-                        case 65:
+                        case 87:
                             console.log("65");
                             aPressed = true;
                             break;
-                        case 68:
+                        case 83:
                             dPressed = true;
                             break;
                     }
                 }
                 function keyUpHandler(event){
                     switch(event.keyCode){
-                        case 37:
+                        case 38:
                             leftPressed = false;
                             break;
-                        case 39:
+                        case 40:
                             rightPressed = false;
                             break;
-                        case 65:
+                        case 87:
                             aPressed = false;
                               break;
-                        case 68:
+                        case 83:
                             dPressed = false;
                             break;
                     }
